@@ -13,7 +13,8 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: black;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -22,6 +23,7 @@ nav {
 nav h1 {
     margin: 0;
     color: snow;
+    font-size: xx-large;
     font-weight: lighter;
 }
 
@@ -31,6 +33,7 @@ nav h1 span {
 }
 
 nav ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
 }
@@ -38,6 +41,7 @@ nav ul {
 nav ul li a{
     margin: 10px;
     color: snow;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -62,6 +66,22 @@ h4 {
     flex-direction: column;
     align-items: center;
 
+}
+
+footer {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    background-color: black;
+    color: snow;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 p {
