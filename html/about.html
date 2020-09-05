@@ -1,29 +1,49 @@
 <!DOCTYPE HTML5>
 <html>
     <head>
-        <!-- Load head. -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script>
-            $(function(){ $("head").load("assets/head.html")});
-        </script>
+        <link rel="stylesheet" href="../css/page-style.css" />
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Importing fonts from Google-->
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap");
+        </style>
+
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.10.2.js"
+        ></script>
+
+        <title>AS - proteins made sweeter!</title>
     </head>
 
     <body>
         <div id="navigation-panel"></div>
         <script>
-            $(function(){
-            $("#navigation-panel").load("assets/nav.html");
+            $(function () {
+                $("#navigation-panel").load("assets/nav.html");
             });
         </script>
 
         <!--Body after navigation panel starts here-->
         <article>
-            <h4>ABOUT ME PAGE</h4>
+            <img
+                class="small-bg"
+                src="../media/distance.png"
+                alt="Image by Michael Piesbergen from Pixabay"
+            />
+            <section class="main-text">
+                <h3>ABOUT ME PAGE</h3>
+            </section>
         </article>
 
         <footer>
             <script>
-                $(function(){ $("footer").load("assets/footer.html")});
+                $(function () {
+                    $("footer").load("assets/footer.html");
+                });
             </script>
         </footer>
     </body>
