@@ -12,6 +12,7 @@
 
 # big content
 media/
+.vscode/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

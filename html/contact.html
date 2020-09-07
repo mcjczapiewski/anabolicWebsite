@@ -12,6 +12,7 @@
         </style>
 
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../js/form-validation.js"></script>
 
         <title>AS - proteins made sweeter!</title>
     </head>
@@ -27,21 +28,22 @@
         <!--Body after navigation panel starts here-->
         <article>
             <h3>CONTACT PAGE</h3>
-            <!-- <form action="http://www.horizon17.pl" method="POST"> -->
-            <form action="mailto:mcjczapiewski@gmail.com" method="POST">
+            <form onsubmit="setTimeout(function(){window.location.reload();},10);" method="POST" id="contact-form">
+                <span class = "error-msg" id="name-error"></span>
                 <label
-                    >Your name: <input type="text" name="first-name" size="13"
+                >Your name: <input type="text" id="first-name" name="first-name" size="13" class="required"
                 /></label>
+                <span class = "error-msg" id="mail-error"></span>
                 <label
-                    >e-mail: <input type="email" name="user-email" size="19"
+                    >e-mail: <input type="email" id="user-email" name="user-email" size="19" class="required"
                 /></label>
                 <textarea
                     name="user-message"
                     cols="30"
                     rows="5"
-                    maxlength="150"
+                    maxlength="150" class="required"
                 ></textarea>
-                <input type="submit" value="SEND" disabled />
+                <input type="submit" name="send-button" value="SEND" disabled />
                 <input type="reset" value="Reset" />
             </form>
         </article>
