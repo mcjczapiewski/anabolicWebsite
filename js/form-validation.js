@@ -51,6 +51,8 @@ $(document).on("submit", function () {
     } else {
         alert("The message has been sent.");
         document.getElementById("contact-form").reset();
-        setTimeout(function(){window.location.reload();},10);
+        setTimeout(function () {
+            window.location.reload();
+        }, 10);
     }
 });

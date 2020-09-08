@@ -103,7 +103,8 @@ article form {
     align-self: center;
 }
 
-#name-error, #mail-error {
+#name-error,
+#mail-error {
     font-size: 13px;
     color: red;
 }

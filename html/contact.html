@@ -29,19 +29,32 @@
         <article>
             <h3>CONTACT PAGE</h3>
             <form method="POST" id="contact-form">
-                <span class = "error-msg" id="name-error"></span>
+                <span class="error-msg" id="name-error"></span>
                 <label
-                >Your name: <input type="text" id="first-name" name="first-name" size="13" class="required"
+                    >Your name:
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        size="13"
+                        class="required"
                 /></label>
-                <span class = "error-msg" id="mail-error"></span>
+                <span class="error-msg" id="mail-error"></span>
                 <label
-                    >e-mail: <input type="email" id="user-email" name="user-email" size="19" class="required"
+                    >e-mail:
+                    <input
+                        type="email"
+                        id="user-email"
+                        name="user-email"
+                        size="19"
+                        class="required"
                 /></label>
                 <textarea
                     name="user-message"
                     cols="30"
                     rows="5"
-                    maxlength="150" class="required"
+                    maxlength="150"
+                    class="required"
                 ></textarea>
                 <input type="submit" name="send-button" value="SEND" disabled />
                 <input type="reset" value="Reset" />
